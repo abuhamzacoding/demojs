@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS</title>
+    <style>
+        button{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid black;
+            background: aqua;
+            color: blue;
+            box-shadow: brown;
+            border-radius: 10px;
+            padding:3px 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>    
+    <button>Roll No.1: Abu Hamza</button> 
+    <script>
+        let namasteBtn = document.querySelector("button");
+        namasteBtn.addEventListener('click', inputMsg);
+
+        function inputMsg(){
+           let name = prompt('Enter Name Of Student');
+           namasteBtn.textContent = 'Roll No.1:' + name;
+        }
+    </script>
+    
+</body>
+</html>
